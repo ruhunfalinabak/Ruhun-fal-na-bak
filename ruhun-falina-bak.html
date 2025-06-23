@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ruhun Falına Bak</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #4b0082, #ffd700);
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    .container {
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    label, input, textarea, button {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+    button {
+      background-color: #ffd700;
+      color: #4b0082;
+      border: none;
+      padding: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #e6c200;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ruhun Falına Bak</h1>
+    <p>Ruhsal rehberliğe bir adım at 🕯️</p>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>🌟 Randevu Formu</h2>
+      <form>
+        <label for="name">Ad Soyad:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">E-posta:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Mesajınız:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Gönder</button>
+      </form>
+    </div>
+
+    <div class="section">
+      <h2>📷 Fotoğraf Yükle</h2>
+      <input type="file" accept="image/*" />
+    </div>
+
+    <div class="section">
+      <h2>🔮 Hakkımızda</h2>
+      <p>Tarot, kahve falı ve ruhsal danışmanlıkla hayat yolculuğunda rehberlik sunuyorum. İç sesine kulak ver, ruhuna dokunalım.</p>
+    </div>
+  </div>
+</body>
+</html>
